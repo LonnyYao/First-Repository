@@ -38,10 +38,12 @@ public class LeftFragment extends Fragment {
 
             switch (v.getId()) {
                 case R.id.bt_lf_fg_send_msg:
+					Log.i(TAG, "button send msg clicked.");
                     MainActivity activity = (MainActivity) getActivity();
                     activity.showMessage("Message From LeftFragment: ");
                     break;
                 case R.id.bt_lf_fg_send_msg2:
+					Log.i(TAG, "button send msg2 clicked.");
                     MainActivity activity2 = (MainActivity) getActivity();
                     Fragment fragment = activity2.getSupportFragmentManager().findFragmentById(R.id.fl_right);
                     if (fragment instanceof RightFragment)
